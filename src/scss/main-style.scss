@@ -1,5 +1,7 @@
-$main-color: #696969;
+/*$main-color: #696969;*/
 
 body {
-    background-color: $main-color;
+    background: url("../../assets/background_image.jpg") no-repeat;
+    background-size: cover;
 }
+    
