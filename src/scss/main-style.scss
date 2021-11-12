@@ -1,2 +1,7 @@
-@import url(./action.scss);
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&display=swap');
+@import "https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&display=swap";
+@import url(../scss/action.scss);
+
+body {
+   background:url(../../assets/background_image.jpg) no-repeat;
+   background-size: cover;
+}
