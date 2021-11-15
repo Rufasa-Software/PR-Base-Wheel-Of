@@ -1,6 +1,14 @@
-$main-color: #696969;
+@import "https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&display=swap";
+@import url(../scss/action.scss);
 
 body {
+<<<<<<< HEAD
     background-color: $main-color;
     
 }
+=======
+   background:url(../../assets/background_image.jpg) no-repeat;
+   background-size: cover;
+}
+
+>>>>>>> feature/Alba_winner
