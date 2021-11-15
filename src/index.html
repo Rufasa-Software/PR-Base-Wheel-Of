@@ -7,8 +7,6 @@
     <title>Wheel of Names</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="scss/main-style.scss">
-    <link href="footer.css" rel="stylesheet">
-    <link href="header.css" rel="stylesheet">
     <title>Wheel of Names</title>
        
 </head>
@@ -18,74 +16,83 @@
 <header>
      <h1>WHEEL OF NAMES</h1>
 </header>
-    
-     
+
 <main>  
-
-    <section class="coin">
-        
-        <section>
-            <div class="circle">
-            <p class="texto">Irina</p>
-            </div> 
-        </section>
-        
-        <section>
-            <div class="circle">
-            <p class="texto">Sasha</p>
-            </div>
-        </section>
-        
-        <section>
-            <div class="circle">
-            <p class="texto">Alba</p>
-            </div>
-        </section>
+    <section id="coins-and-buttons">
+        <section class="coin">
             
-        <section>
-            <div class="circle">
-            <p class="texto">Agustín</p>
-            </div>
-        </section> 
+            <section>
+                <div class="circle">
+                <p class="texto">Irina</p>
+                </div> 
+            </section>
+            
+            <section>
+                <div class="circle">
+                <p class="texto">Sasha</p>
+                </div>
+            </section>
+            
+            <section>
+                <div class="circle">
+                <p class="texto">Alba</p>
+                </div>
+            </section>
+                
+            <section>
+                <div class="circle">
+                <p class="texto">Agustín</p>
+                </div>
+            </section> 
 
-        <section>
-            <div class="circle">
-            <p class="texto">Christian</p>
-            </div>
-        </section>
+            <section>
+                <div class="circle">
+                <p class="texto">Christian</p>
+                </div>
+            </section>
 
-        <section>
-            <div class="circle">
-            <p class="texto">Christian</p>
-            </div>
-        </section> 
+            <section>
+                <div class="circle">
+                <p class="texto">Christian</p>
+                </div>
+            </section> 
 
-        <section>
-            <div class="circle">
-            <p class="texto">Christian</p>
-            </div>
+            <section>
+                <div class="circle">
+                <p class="texto">Christian</p>
+                </div>
+            </section>
         </section>  
         
-    </section>  
-    
- <section class="action">
+        <section class="action">
+            <button class="play">PLAY</button>    
+            <button class="btn-winners">Ganadores</button>
+        </section>
+    </section> 
         
-     <button class="play">PLAY</button>    
-
-     <button class="winners">Ganadores</button>
-
-<section id="winners">
-    <h2>Ganadores</h2>
-    <ol>
-        <li>María</li>
-        <li>Pepe</li>
-        <li>Patricia</li>
-    
-    </ol>
-</section>
-
- </section>
-
+    <section id="winners-and-players">
+        <section id="winners">
+            <h2>Ganadores</h2>
+            <ol>
+                <li>María</li>
+                <li>Pepe</li>
+                <li>Patricia</li>
+            </ol>
+        </section> 
+        <section id="players">
+            <h2>Participantes</h2>
+            <form>
+                <input type="text" id="name" name="name" placeholder="Introduce tu nombre">
+                <button type="submit">Añadir</button>
+            </form>
+            <section class="list_of_names">
+                <ul>
+                    <li class="new-player"><p>Alba</p> <div class="iconos"></div><i class="fas fa-edit"><i class="fas fa-trash-alt"></i></i></div></li>
+                    <li class="new-player"><p>Agustín</p> <div class="iconos"></div><i class="fas fa-edit"><i class="fas fa-trash-alt"></i></i></div></li>
+                </ul>
+            </section>       
+        </section>
+    </section>
 </main>
 
 <footer>
@@ -93,23 +100,8 @@
 </footer>
     
    
-    
-<script src="ts/app.ts" type="module"></script>
 
-    <section id="players">
-        <h2>Participantes</h2>
-        <form>
-            <input type="text" id="name" name="name" placeholder="Introduce tu nombre">
-            <button type="submit">Añadir</button>
-        </form>
-        <section class="list_of_names">
-            <ul>
-                <li class="new-player"><p>Alba</p> <div class="iconos"></div><i class="fas fa-edit"><i class="fas fa-trash-alt"></i></i></div></li>
-                <li class="new-player"><p>Agustín</p> <div class="iconos"></div><i class="fas fa-edit"><i class="fas fa-trash-alt"></i></i></div></li>
-                
-            </ul>
-        </section>
-    </section>
+    
     <script src="ts/app.ts" type="module"></script>
 </body>
 

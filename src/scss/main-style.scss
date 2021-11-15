@@ -1,12 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&display=swap";
-@import './layouts/variables';
-@import 'action';
-@import 'coins';
-
-
-*{
 @import 'imports.scss';
-}
 * {
     margin: 0;
     padding: 0;
@@ -15,8 +7,16 @@
 body {
     background: url(../../assets/background_image.jpeg) no-repeat;
     background-size:cover;
-    height: 100vh;
+    
     font-family: 'Abhaya Libre', serif;
+}
+
+@media (min-width: $breakpoint-tablet) {
+    main {
+        display: flex;
+        justify-content: center;
+        margin: 1em 0;
+    }
 }
 
 

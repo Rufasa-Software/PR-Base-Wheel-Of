@@ -1,20 +1,18 @@
-
-
-
 .coin {
     display: flex;
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
-    
+     
     section{
-        width: 30%;
+        width: 25%;
         min-width: 100px;
-        
+        margin: 2%;
+      
     }
     .circle{
       
-        margin: 2%;
+        margin: 2% auto;
         width: 30%;
         min-width: 100px;
         min-height: 100px;
@@ -22,10 +20,10 @@
         -webkit-border-radius: 50%;
         border-radius: 50%;
         background: #ffd6a5;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
+        box-shadow: 2px 2px 2px 1px rgba(130, 130, 130, 0.8);
         border-style: solid;
         border-width: 2px;
-        border-color: rgb(59, 56, 56);
+        border-color: #828282;
         flex-basis: 25%;
         display: flex;
         align-items: center;
@@ -41,8 +39,8 @@
 
 
 
-@media (min-width:$breakpoint-tablet) {
+/*@media (min-width:$breakpoint-tablet) {
     .coin {
         width: 50%;
     }
-}
+}*/
