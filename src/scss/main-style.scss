@@ -1,6 +1,8 @@
 @import "https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&display=swap";
-@import url(../scss/action.scss);
-@import url(../scss/coins.scss);
+@import './layouts/variables';
+@import 'action';
+@import 'coins';
+
 
 *{
     margin: 0;
@@ -13,3 +15,5 @@ body {
     height: 100vh;
     font-family: 'Abhaya Libre', serif;
 }
+
+

@@ -1,0 +1,11 @@
+
+
+#winners {
+    display: none;
+}
+
+@media (min-width: $breakpoint-tablet) {
+    #winners {
+        display: block;
+    }
+}

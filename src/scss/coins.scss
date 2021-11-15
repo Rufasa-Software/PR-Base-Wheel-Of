@@ -1,10 +1,11 @@
 
+
+
 .coin {
     display: flex;
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
-    border: 1px solid red;
     
     section{
         width: 30%;
@@ -38,7 +39,7 @@
 
 
 
-$breakpoint-tablet: 768px;
+
 
 @media (min-width:$breakpoint-tablet) {
     .coin {
