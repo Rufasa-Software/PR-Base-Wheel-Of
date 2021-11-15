@@ -1,0 +1,73 @@
+#players {
+    width: 90%;
+    margin: 0 auto;
+    
+    h2 {
+        text-align: center;
+        font-size: 6vw;
+        margin: 3vw;
+                }
+    form {
+        width: 90%;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        
+            input {
+                margin: 2vw;
+                height: 5vh;
+                width: 80%;
+            }
+            button {
+                padding: 1em;
+                background-color: transparent;
+                font-size: 1em;
+                border: 0;
+            }
+    }
+    .list_of_names {
+
+        margin-top: 2em;
+        h2 {
+            text-align: center;
+            font-size: 2vw;
+            margin: 0.5vw;
+                    }
+        .new-player {
+            display: flex;
+            padding: 0.5em;
+            border-bottom: 1px solid rgb(66, 65, 65);
+            justify-content: space-between; 
+            font-size: 6vw;
+            
+        }
+        .fas {
+            margin-left: 1em;
+            color: rgb(66, 65, 65);
+        }
+
+    }
+    
+}
+@media (min-width: $breakpoint-tablet) {
+    #players {
+       width: 30%;
+       border: 1px solid rgb(139, 71, 71);
+       h2 {
+           font-size: 2vw;
+       } 
+       .list_of_names {
+        .new-player {
+                display: flex;
+                border-bottom: 1px solid rgb(66, 65, 65);
+                justify-content: space-between; 
+                font-size: 2em;
+            
+            }
+            .fas {
+                margin-left: 1em;
+             }
+            }
+        }
+    }

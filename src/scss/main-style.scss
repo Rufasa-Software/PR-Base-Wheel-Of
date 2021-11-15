@@ -1,7 +1,13 @@
-/*$main-color: #696969;*/
+@import 'imports.scss';
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background: url("../../assets/background_image.jpg") no-repeat;
     background-size: cover;
+    height: 100vh;
 }
     
