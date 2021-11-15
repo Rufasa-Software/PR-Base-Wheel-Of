@@ -1,9 +1,12 @@
-h2{
+h1{
     background-color: #a0c4ff;
     text-align: center;  
-    width: 95%;
+    width: 100%;
     font-family: Abhaya Libre ExtraBold;
-    padding: 20px 40px;
-    font-size: 35px;
-   
-   }
+    padding: 0.5em 1.5em;
+    font-size: 2.8em;
+}
+
+header {
+    padding-bottom: 1em;
+}
