@@ -1,21 +1,10 @@
-footer{
+footer {
+    position: absolute;
+    bottom: 0;
     background-color: #a0c4ff;
     text-align: center;
     color: black;
-    margin-top: 80px;
     width: 100%;
     font-family: Abhaya Libre ExtraBold;
-    font-size: 8px;
-   }          
-   footer div {
-   padding: 10px 30px;
-   }
-   
-   footer a, footer a:visited {
-   color: black;
-   }
-   
-   footer a:hover {
-   color: #000;
-   text-decoration: underline;
-   } 
+    font-size: 1em;
+} 

@@ -1,9 +1,10 @@
 
 .coin {
     display: flex;
-    
+    align-content: center;
     justify-content: center;
     flex-wrap: wrap;
+    border: 1px solid red;
     
     section{
         width: 30%;
@@ -21,7 +22,6 @@
         border-radius: 50%;
         background: #ffd6a5;
         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
-        
         border-style: solid;
         border-width: 2px;
         border-color: rgb(59, 56, 56);
