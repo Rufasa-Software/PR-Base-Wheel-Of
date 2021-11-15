@@ -1,11 +1,16 @@
 @import "https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&display=swap";
 @import url(../scss/action.scss);
+@import url(../scss/coins.scss);
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background-color: $main-color;
-    
-
-   background:url(../../assets/background_image.jpg) no-repeat;
-   background-size: cover;
+    background: url(../../assets/background_image.jpeg) no-repeat;
+    background-size:cover;
+    height: 100vh;
+    font-family: 'Abhaya Libre', serif;
 }
-
