@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel of Names</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="scss/main-style.scss">
     <link href="footer.css" rel="stylesheet">
     <link href="header.css" rel="stylesheet">
@@ -94,6 +96,21 @@
     
 <script src="ts/app.ts" type="module"></script>
 
+    <section id="players">
+        <h2>Participantes</h2>
+        <form>
+            <input type="text" id="name" name="name" placeholder="Introduce tu nombre">
+            <button type="submit">Añadir</button>
+        </form>
+        <section class="list_of_names">
+            <ul>
+                <li class="new-player"><p>Alba</p> <div class="iconos"></div><i class="fas fa-edit"><i class="fas fa-trash-alt"></i></i></div></li>
+                <li class="new-player"><p>Agustín</p> <div class="iconos"></div><i class="fas fa-edit"><i class="fas fa-trash-alt"></i></i></div></li>
+                
+            </ul>
+        </section>
+    </section>
+    <script src="ts/app.ts" type="module"></script>
 </body>
 
 </html>
