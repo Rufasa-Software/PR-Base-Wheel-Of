@@ -1,4 +1,3 @@
-
 function app() : void
 {
     console.log('connected');
