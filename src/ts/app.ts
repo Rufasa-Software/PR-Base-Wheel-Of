@@ -1,6 +1,9 @@
-function app() : void
+import {newUser, renderList} from '../ts/create_user';
+function app() : any
 {
-    console.log('connected');
+    
+    newUser();
+    renderList();
 }
 
 app();
