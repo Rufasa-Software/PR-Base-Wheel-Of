@@ -1,19 +1,26 @@
- 
-let usersArray: string[] = [];
-const app = document.getElementById('app') as HTMLElement;
-const listUsers = document.getElementById('players') as HTMLElement;
-const inputNewUser = document.getElementById('name') as HTMLInputElement;
-const btnAddUser = document.getElementById('btn-add-user') as HTMLInputElement;
 
-btnAddUser.addEventListener('click', newUser);
 
-export function newUser() {
-    if(inputNewUser.value !='') {
-        usersArray.push(inputNewUser.value);
-    }
+import { btnAddUser, inputNewUser, listUsers, usersArray } from "./elements";
+
+export function newUser() : void
+{
+
+    btnAddUser.addEventListener('click', () => {
+        if(inputNewUser.value !='') {
+            usersArray.push(inputNewUser.value);
+            renderList();            
+        }
+        if(inputNewUser.value =='') {
+            console.log('input vacio');
+        }
+        
+    });
+
+    
 }
 
-export function renderList(){
+export function renderList() : void 
+{
     listUsers.innerHTML = '<ul id="ul-user"></ul>';
     usersArray.forEach(user => {
         const ulUsers = document.getElementById('ul-user') as HTMLElement;
