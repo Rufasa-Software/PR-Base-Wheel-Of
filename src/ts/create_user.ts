@@ -10,6 +10,7 @@ export function newUser() : void
             usersArray.push(inputNewUser.value);
             inputNewUser.value = '';
             renderList();            
+            hola
         }
         if(inputNewUser.value =='') {
             console.log('input vacio');
