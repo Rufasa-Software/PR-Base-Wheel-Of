@@ -1,6 +1,6 @@
 
 import { renderList } from "./create_user";
-import {btnPlay, coinsSection, usersArray } from "./elements";
+import {btnPlay, messageContainer, usersArray } from "./elements";
 
 export function play() : void
 {
@@ -14,13 +14,13 @@ export function play() : void
             console.log(num);
             usersArray.splice(num,1);
            
-            //coinsSection.innerHTML=`<div>El jugador ${looser} ha sido eliminado</div>`;
-            alert ("El jugador" + looser + "ha sido eliminado");
+            
+            
             //console.log(usersArray[num]);
             renderList();
+            messageContainer.innerHTML=`<div>El jugador ${looser} ha sido eliminado</div>`;
             if (usersArray.length== 1){
-                let mensaje=document.getElementById('coin');
-                mensaje.innerHTML=`<div>El ganador es ${usersArray[0]}</div>`;
+                messageContainer.innerHTML=`<div>El ganador es ${usersArray[0]}</div>`;
             }
         }
 
