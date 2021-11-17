@@ -32,7 +32,13 @@
     }
 }
 
-
+.animationCoin {
+    animation: flipHeads 3s;
+    animation-fill-mode: forwards;  
+    animation-duration: 5s;        
+    @keyframes flipHeads { from{ transform: rotateY(0deg); } to{ transform: rotateY(1800deg);} }
+    
+}
 
 
 
