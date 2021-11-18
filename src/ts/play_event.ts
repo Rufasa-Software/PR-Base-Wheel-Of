@@ -1,6 +1,7 @@
 
 import { renderList } from "./create_user";
-import {animationCoin, btnPlay, messageContainer, usersArray } from "./elements";
+import { deleteUser } from "./delete_user";
+import {animationCoin, btnDeleteUser, btnPlay, messageContainer, usersArray } from "./elements";
 
 export function play() : void
 {
@@ -28,7 +29,6 @@ export function play() : void
             }  
             
             renderList();
-                 
             }, 5000);
             messageContainer.innerHTML=`<div></div>`;
 });

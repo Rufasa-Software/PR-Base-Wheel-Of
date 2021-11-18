@@ -1,6 +1,7 @@
 
 
-import { animationCoin, btnAddUser, coinsSection, colorsBackground, inputNewUser, listUsers, usersArray } from "./elements";
+import { deleteUser } from "./delete_user";
+import { animationCoin, btnAddUser, coinsSection, colorsBackground, inputNewUser, listUsers, usersArray, btnDeleteUser } from "./elements";
 
 export function newUser() : void
 {
@@ -9,7 +10,9 @@ export function newUser() : void
         if(inputNewUser.value !='') {
             usersArray.push(inputNewUser.value);
             inputNewUser.value = '';
-            renderList();            
+            renderList();
+            deleteUser();
+                   
             
         }
         if(inputNewUser.value =='') {
@@ -28,19 +31,11 @@ export function renderList() : void
     usersArray.forEach(user => {
         const ulUsers = document.getElementById('ul-user') as HTMLElement;
         const allCoins = document.getElementById('coinSection') as HTMLDivElement;
-        let i:number= 0;
-        let identificator:number;
-        for (i= 0; i < usersArray.length; i++) {
-            identificator +=i;
-        }
-        ulUsers.innerHTML += `<li class="new-player"><p>${user}</p> <div class="iconos"></div><i class="fas fa-edit"><i class="fas fa-trash-alt"id='${identificator}'></i></i></div></li>`;
-              
-        allCoins.innerHTML += `<section><div class="circle">
-        <p>${user}</p></div></section>`;
+        ulUsers.innerHTML += `<li class="new-player" id="player-${user}"><p>${user}</p> <div class="iconos"><i class="fas fa-trash-alt btn-delete" id=${user}></i><i class="fas fa-edit"></div></li>`;       
+        allCoins.innerHTML += `<section><div class="circle" id="coin-${user}"><p>${user}</p></div></section>`;
 
         ulUsers.style.cssText = "margin-bottom: 2em; list-style: none;"
         
-            
+    
     });
-
 }
