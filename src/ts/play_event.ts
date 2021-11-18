@@ -15,17 +15,18 @@ export function play() : void
             }
             
             setTimeout(() => {
-                if (usersArray.length == 1) {
+                usersArray.splice(num,1);
+                if (usersArray.length < 2) {
                     messageContainer.innerHTML = `<div><p>Por favor, introduce al menos 2 jugadores para empezar el juego</p></div>`
                 }
-                if (usersArray.length > 2) {
+                if (usersArray.length >= 2) {
                     messageContainer.innerHTML=`<div><p>El jugador ${looser} ha sido eliminado</p><p class="text-indicator">Pulsa PLAY para seguir jugando</p></div>`;
                 }
-                if (usersArray.length == 2)
+                if (usersArray.length == 1)
                 {          
                 messageContainer.innerHTML=`<div><p>El ganador es ${usersArray[0]}</p></div>`
             }  
-            usersArray.splice(num,1);
+            
             renderList();
                  
             }, 5000);
