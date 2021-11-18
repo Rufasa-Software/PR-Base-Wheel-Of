@@ -1,21 +1,24 @@
-.coin {
+
+#coinSection {
     display: flex;
-    align-content: center;
     justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
+   
      
     section{
         width: 25%;
         min-width: 100px;
         margin: 2%;
-      
+       
     }
+    
     .circle{
-      
         margin: 2% auto;
         width: 30%;
         min-width: 100px;
         min-height: 100px;
+        text-align: center;
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
         border-radius: 50%;
@@ -28,15 +31,17 @@
         display: flex;
         align-items: center;
         justify-content: center;
+       
         
     }
-}
-
-.animationCoin {
-    animation: flipHeads 3s;
-    animation-fill-mode: forwards;  
-    animation-duration: 5s;        
-    @keyframes flipHeads { from{ transform: rotateY(0deg); } to{ transform: rotateY(1800deg);} }
+    .rotate {
+        animation: flipHeads 5s;
+        animation-fill-mode: forwards;  
+        animation-duration: 5s;        
+        @keyframes flipHeads { from{ transform: rotateY(0deg); } 
+        to{ transform: rotateY(1800deg);} }
+        
+    }
     
 }
 
@@ -45,8 +50,4 @@
 
 
 
-/*@media (min-width:$breakpoint-tablet) {
-    .coin {
-        width: 50%;
-    }
-}*/
+

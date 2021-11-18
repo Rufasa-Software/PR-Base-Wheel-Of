@@ -1,6 +1,6 @@
 
 
-import { btnAddUser, coinsSection, inputNewUser, listUsers, usersArray } from "./elements";
+import { animationCoin, btnAddUser, coinsSection, colorsBackground, inputNewUser, listUsers, usersArray } from "./elements";
 
 export function newUser() : void
 {
@@ -10,7 +10,7 @@ export function newUser() : void
             usersArray.push(inputNewUser.value);
             inputNewUser.value = '';
             renderList();            
-            hola
+            
         }
         if(inputNewUser.value =='') {
             console.log('input vacio');
@@ -31,6 +31,10 @@ export function renderList() : void
         ulUsers.innerHTML += `<li class="new-player"><p>${user}</p> <div class="iconos"></div><i class="fas fa-edit"><i class="fas fa-trash-alt"></i></i></div></li>`;
         allCoins.innerHTML += `<section><div class="circle">
         <p>${user}</p></div></section>`;
+
+        ulUsers.style.cssText = "margin-bottom: 2em; list-style: none;"
+        
+            
     });
 
 }
