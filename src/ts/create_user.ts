@@ -28,7 +28,13 @@ export function renderList() : void
     usersArray.forEach(user => {
         const ulUsers = document.getElementById('ul-user') as HTMLElement;
         const allCoins = document.getElementById('coinSection') as HTMLDivElement;
-        ulUsers.innerHTML += `<li class="new-player"><p>${user}</p> <div class="iconos"></div><i class="fas fa-edit"><i class="fas fa-trash-alt"></i></i></div></li>`;
+        let i:number= 0;
+        let identificator:number;
+        for (i= 0; i < usersArray.length; i++) {
+            identificator +=i;
+        }
+        ulUsers.innerHTML += `<li class="new-player"><p>${user}</p> <div class="iconos"></div><i class="fas fa-edit"><i class="fas fa-trash-alt"id='${identificator}'></i></i></div></li>`;
+              
         allCoins.innerHTML += `<section><div class="circle">
         <p>${user}</p></div></section>`;
 
