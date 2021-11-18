@@ -13,7 +13,10 @@ export function deleteUser() : void
            const coinList = document.getElementById(`coin-${idStrIc}`);
            elementList.remove();
            coinList.remove();
-       })
-     
-    })
+           
+       
+       
+        });
+    });
 }
+
