@@ -1,7 +1,7 @@
 
 
 import { deleteUser } from "./delete_user";
-import { animationCoin, btnAddUser, coinsSection, colorsBackground, inputNewUser, listUsers, usersArray} from "./elements";
+import { animationCoin, btnAddUser, coinsSection, inputNewUser, listUsers, usersArray} from "./elements";
 
 export function newUser() : void
 {

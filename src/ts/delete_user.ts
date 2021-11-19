@@ -6,7 +6,7 @@ export function deleteUser() : void
 {
     const btnDeleteUser = document.querySelectorAll('.btn-delete');
    btnDeleteUser.forEach(btn => {
-       btn.addEventListener ('click', e => {
+       btn.addEventListener ('click', (e) => {
            let idStrIc = (<HTMLElement>e.target).id;
            
            const elementList = document.getElementById(`player-${idStrIc}`);
