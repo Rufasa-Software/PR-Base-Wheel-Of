@@ -1,0 +1,231 @@
+@import "https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&display=swap";
+header {
+  padding-bottom: 1em;
+}
+header h1 {
+  background-color: #a0c4ff;
+  text-align: center;
+  width: 100%;
+  font-family: Abhaya Libre ExtraBold;
+  padding: 0.5em 1.5em;
+  font-size: 2em;
+}
+#coinSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#coinSection section {
+  width: 25%;
+  min-width: 100px;
+  margin: 2%;
+}
+#coinSection .circle {
+  margin: 2% auto;
+  width: 30%;
+  min-width: 100px;
+  min-height: 100px;
+  text-align: center;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #ffd6a5;
+  box-shadow: 2px 2px 2px 1px rgba(130, 130, 130, 0.8);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #828282;
+  flex-basis: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#coinSection .rotate {
+  animation: flipHeads 5s;
+  animation-fill-mode: forwards;
+  animation-duration: 5s;
+}
+@keyframes flipHeads {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(1800deg);
+  }
+}
+.action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.action #play {
+  font-family: "Abhaya Libre ExtraBold";
+  font-size: 2em;
+  font-weight: bold;
+  margin: 5% auto;
+  width: 35%;
+  height: 10%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
+  border-width: medium;
+  border-color: gray;
+  border-radius: 1.875rem;
+  background-color: #A0C4FF;
+}
+.action #btn-winners {
+  font-size: 1.2em;
+  width: 6em;
+  height: 5%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
+  border-width: thin;
+  border-color: gray;
+  margin-bottom: 1em;
+}
+@media (min-width: 768px) {
+  .action #btn-winners {
+    display: none;
+  }
+}
+#players {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #EEEEEE;
+  color: #494949;
+}
+#players h2 {
+  text-align: center;
+  font-size: 6vw;
+  padding-top: 1em;
+}
+#players #add-user {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+#players #add-user input {
+  margin: 2vw;
+  height: 5vh;
+  width: 80%;
+  border: 1px solid #6A6A6A;
+}
+#players #add-user button {
+  padding: 1em;
+  background-color: transparent;
+  font-size: 1em;
+  border: 0;
+  color: #494949;
+}
+#players .list_of_names {
+  margin: 1em;
+}
+#players .new-player {
+  display: flex;
+  padding: 0.5em;
+  border-bottom: 1px solid #424141;
+  justify-content: space-between;
+  font-size: 1em;
+  color: black;
+}
+#players .fas {
+  margin-left: 1.2em;
+  color: #424141;
+}
+@media (min-width: 768px) {
+  #players {
+    margin: initial;
+    width: 60%;
+  }
+  #players h2 {
+    font-size: 2vw;
+  }
+  #players .list_of_names .new-player {
+    display: flex;
+    border-bottom: 1px solid #757575;
+    justify-content: space-between;
+    font-size: 1em;
+  }
+  #players .list_of_names .fas {
+    margin-left: 1em;
+  }
+}
+#winners {
+  display: none;
+  background-color: #EEEEEE;
+  color: #494949;
+}
+#winners ol {
+  width: 80%;
+  margin: 1em auto;
+}
+#winners ol li {
+  margin: 0.8em 0;
+}
+@media (min-width: 768px) {
+  #winners-and-players #winners {
+    display: block;
+    width: 40%;
+  }
+  #winners-and-players h2 {
+    text-align: center;
+    padding-top: 1em;
+    font-size: 2vw;
+  }
+}
+footer {
+  background-color: #a0c4ff;
+  text-align: center;
+  color: black;
+  width: 100%;
+  font-family: Abhaya Libre ExtraBold;
+  font-size: 1em;
+  padding: 0.5em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+#coins-and-buttons {
+  width: 100%;
+}
+#coins-and-buttons #messageContainer p {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 2%;
+}
+#coins-and-buttons .text-indicator {
+  font-size: 1em;
+  color: blue;
+}
+@media (min-width: 768px) {
+  #coins-and-buttons {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  #winners-and-players {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 45%;
+    justify-content: flex-start;
+  }
+  #winners-and-players section {
+    margin: 0 1em;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(background_image.d7d0749e.jpeg) no-repeat fixed center;
+  background-size: cover;
+  font-family: "Abhaya Libre", serif;
+}
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+  }
+}
